@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class LibraryTests {
     @Test
     public void testBuildLibrary() {
-        List<LibraryItem> library = new ArrayList<>();
+        List<Library.LibraryItem> library = new ArrayList<>();
         library.add(new Book("The Catcher in the Rye", "J.D. Salinger", 1951, 234));
         library.add(new Album("The Dark Side of the Moon", "Pink Floyd", 1973, 10));
         library.add(new Movie("The Dark Knight", "Christopher Nolan", 2008, 152));

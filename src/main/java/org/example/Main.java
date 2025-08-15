@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
-    private static List<LibraryItem> library = new ArrayList<>();
+    private static List<Library.LibraryItem> library = new ArrayList<>();
+
 
     public static void main(String[] args) {
         System.out.println("---------------------------------");
@@ -46,7 +47,7 @@ public class Main {
     }
 
     public static void listAllItems() {
-        for (LibraryItem item : library) {
+        for (Library.LibraryItem item : library) {
             System.out.println(item);
         }
     }
@@ -91,7 +92,7 @@ public class Main {
     }
 
     public static void readBooks() {
-        for (LibraryItem item : library) {
+        for (Library.LibraryItem item : library) {
             if (item instanceof Book) {
                 ((Book) item).readBook();
             }
